@@ -26,7 +26,7 @@ repos:
 
   # python import sorting
   - repo: https://github.com/PyCQA/isort
-    rev: 5.12.0
+    rev: 5.13.1
     hooks:
       - id: isort
         args: ["--profile", "black", "--filter-files"]
@@ -84,14 +84,14 @@ repos:
 
   # python security linter
   - repo: https://github.com/PyCQA/bandit
-    rev: "1.7.5"
+    rev: "1.7.6"
     hooks:
       - id: bandit
         args: ["-s", "B101"]
 
   # yaml formatting
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.1.0
+    rev: v4.0.0-alpha.4
     hooks:
       - id: prettier
         types: [yaml]
